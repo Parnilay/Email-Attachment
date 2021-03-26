@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <title>Flipshope Attachment</title>
+    <style>
+        .p, html, body {
+            font-family: poppins;
+        }
+        .container.main {
+            width: 100%;
+            max-width: 950px;
+            margin: auto;
+            background: #e4e6e9;;
+        }
+        /** Styling For Header */
+        .container-fluid.header {
+            max-width: 950px;
+            background: #7B57F6;
+            text-align: center;
+            margin: -43px auto 0px;
+        }
+        .flipshope-logo {
+            margin: -20px auto;
+        }
+        /** Styling For Header */
+
+        /** Styling For Mid-Container */
+        .container-fluid.mid-container {
+            max-width: 607px;
+            margin: auto;
+            background: white;
+        }
+        .container-fluid.container1 {
+            margin: -42px auto 0px;
+            width: min(100%, 607px);
+            display: table;
+            background: #e2dafe;
+        }
+        .clearfix::after {
+           content: "";
+           clear: both;
+           display: table;
+}
+        .container1-left {
+            width: 50%;
+            float: left;
+            text-align: center;
+            display: inline-block;
+            margin: 11% auto;
+        }
+        .we-have {
+            text-align: center;
+            color: #000000;
+            font-size: 25px;
+        }
+        .down {
+            font-size: 20px;
+            background: #FFFFFF 0% 0% no-repeat padding-box;
+            border: 1px solid #7B57F6;
+            border-radius: 10px;
+            color: #7B57F6;
+            font-weight: bold;
+            padding: 4px 12px 4px;
+        }
+        .container1-right {
+            width: 50%;
+            float: right;
+            display: flex;
+            flex-flow: row wrap;
+        }
+        .mobile {
+            max-width: 53%;
+            margin-top: -50px;
+        }
+        .earpods {
+            max-width: 47%;
+        }
+        .headphones {
+            max-width: 53%;
+            margin-bottom: -75px;
+        }
+        .watch {
+            max-width: 47%;
+        }
+        .container2 {
+            background: white;
+            display: flex;
+        }
+        .container2-left {
+            width: 50%;
+            float: left;
+            margin: 10px auto;
+        }
+        .note-10 {
+            max-width: 365px;
+            margin: auto -60px;
+        }
+        .container2-right {
+            width: 50%;
+            text-align: center;
+            margin: auto;
+            line-height: 28px;
+        }
+        .trick {
+            background: #7B57F6 0% 0% no-repeat padding-box;
+            box-shadow: 0px 2px 6px #0000008A;
+            border: 1px solid #7B57F6;
+            border-radius: 10px;
+            color: white;
+            font-size: 26px;
+            margin-top: -8%;
+            padding: 2px 12px 2px;
+            font-weight: 600;
+
+        }
+        .icici-logo {
+            background: white;
+            margin: -50px auto;
+            padding: 0px 30px;
+        }
+        .components {
+            background: white;
+            display: flex;
+            font-size: 9px;
+            text-align: center;
+            padding: 0px 10px 0px;
+        }
+        .component-inner {
+            width: 25%;
+            margin: 40px auto 40px;
+        }
+        .achievements {
+            background: #a835c8;
+        }
+        .sub-container {
+            display: flex;
+            justify-content: space-evenly;
+            font-size: 12px;
+            max-width: 550px;
+            background: white;
+            margin: auto;
+            text-align: center;
+            box-shadow: 0px 3px 9px #c6c5c5;
+        }
+        .achieve-heading {
+            color: #5837FF;
+        }
+        .use {
+            display: flex;
+            padding: 0px 5px 0px;
+        }
+        .use-left {
+            margin: auto;
+            font-size: 12px; 
+            width:50%;
+            text-align:center;
+        }
+        .use-right {
+            width:50%;
+        }
+        .bottom-button {
+            border: 1px solid #7B57F6;
+            border-radius: 10px;
+            font-size: 29px;
+            background: #7B57F6;
+            color: white;
+            padding: 5px 10px;
+            font-weight: 600;
+            padding: 2px 12px 2px;
+        }
+        .button-container {
+            text-align: center;
+            padding: 25px 0px;
+        }
+        .footer {
+            background: #7B57F6;
+            text-align: center;
+            justify-content: space-evenly;
+            margin: 1px auto 22px;
+            max-width: 950px;
+            width: 100%;
+            padding: 46px 0px 32px 0px;
+        }
+        .logo {
+            width: 5%;
+            margin: auto 2px;
+        }
+        @media screen and (max-width: 480px) {
+            .container1-left {
+            width: 50%;
+            float: left;
+            text-align: center;
+            display: inline-block;
+            margin: 11% auto;
+        }
+        .we-have {
+            text-align: center;
+            color: #000000;
+            font-size: 20px;
+        }
+        .down {
+            font-size: 15px;
+            background: #FFFFFF 0% 0% no-repeat padding-box;
+            border: 1px solid #7B57F6;
+            border-radius: 10px;
+            color: #7B57F6;
+        }
+        }
+    </style>
+</head>
+<body>
+    <div class="container main">
+        <!--HTML Header-->
+        <div class="container-fluid header">
+            <img class="flipshope-logo" src="PNG/flipshope.png">
+        </div>
+        <!--HTML Header-->
+        <!--HTML Mid Container-->
+        <div class="container-fluid mid-container">
+            <!--Container 1-->
+            <div class="container-fluid container1 clearfix">
+                <div class="container1-left">
+                    <h2 class="we-have">We Have<br>Improved Ourself</h2>
+                    <button type="button" class="down"><a href="https://bit.ly/flipshope" style="text-decoration: none;">Download Extension</a></button>    
+                </div>
+                <div class="container1-right">
+                    <img class="mobile" src="PNG/Mobile1.png">
+                    <img class="earpods" src="PNG/Untitled-1.png">       
+                    <img class="headphones" src="PNG/Untitled-.png">
+                    <img class="watch" src="PNG/Untitled.png">         
+                </div>
+            </div>
+            <!--Container 1-->
+
+            <!--Container 2-->
+            <div class="container2 clearfix">
+                <div class="container2-left">
+                  <img class="note-10" src="PNG/WWW.png">
+                </div>
+                <div class="container2-right">
+                  <p style="font-size: 19px;">Redmi Note 10 Series</p>
+                  <p style="font-size: 30px;margin-top: -2%;">Available Now</p>
+                  <button type="button" class="trick"><a href="https://www.youtube.com/channel/UCLxG6EGklFZbhBP-6rdYSLA" style="text-decoration: none; color: white;">Trick To Buy</a></button>
+                </div>
+            </div>
+            <!--Container 2-->
+
+            <!--Container 3-->
+            <div class="icici-logo">
+                <img style="width: 100%;" src="PNG/icici.png">
+            </div>
+            <!--Container 3-->
+            <hr style="width:70%; margin: 65px auto 0px;box-shadow: 0px 3px 9px #c6c5c5;">
+            <!--Container 4-->
+            <div class="components">
+                <div class="component-inner">
+                    <img style="width: 60px;" src="PNG/AA.png">
+                    <h2 class="component-heading">Auto Apply Coupons</h2>
+                    <p class="component-description">Get promo codes and coupons</p>
+                    <!-- applicable on the shopping platform you visit. -->
+                </div>
+                <div class="component-inner">
+                    <img style="width: 60px;" src="PNG/Q.png">
+                    <h2 class="component-heading">Price Graph</h2>
+                    <p class="component-description">Track price fluctuations using our price graph</p>
+                </div>
+                <div class="component-inner">
+                    <img style="width: 60px;" src="PNG/aaa.png">
+                    <h2 class="component-heading">Real Time Deals</h2>
+                    <p class="component-description">Get notifications for deals from AI-powered system.</p>
+                </div>
+                <div class="component-inner">
+                    <img style="width: 60px;" src="PNG/zxx.png">
+                    <h2 class="component-heading">Price Drop Alert</h2>
+                    <p class="component-description">Get Email notification as there price goes Down.</p>
+                </div>
+            </div>
+            <!--Container 4-->
+
+            <hr style="width:70%; margin: 0px auto 65px;box-shadow: 0px 3px 9px #c6c5c5;">
+
+            <!--Container 5-->
+            <div class="achievements">
+                <h2 style="color: white;text-align: center;margin: -15px 0px -11%; padding: 22px 0px 75px;">Our Achievements</h2>
+            </div>
+            <div class="sub-container">
+                <div>
+                    <h1 class="achieve-heading">200+</h1>
+                    <p>Active Merchants</p>
+                </div>
+                <div>
+                    <h1 class="achieve-heading">2000000+</h1>
+                    <p>Downloads</p>
+                </div>
+                <div>
+                    <h1 class="achieve-heading">500000+</h1>
+                    <p>Products Purchase</p>
+                </div>
+            </div>
+
+            <!--Container 5-->
+
+            <!--Container 6-->
+            <div class="use">
+                <div class="use-left">
+                    <h1>How To Use Flipshope?</h1>
+                </div>
+                <div class="use-right">
+                    <a href="https://flipshope.com/blog/trick-to-buy-redmi-note-10-pro-max/" style="text-decoration: none;"><img src="PNG/ff.png" style="max-width: 100%;"></a>
+                </div>
+            </div>  
+            <!--Container 6-->
+
+            <hr style="width:70%;box-shadow: 0px 3px 9px #c6c5c5;">
+
+            <!--Bottom Button-->
+            <div class="button-container">
+                <button class="bottom-button"><a href="https://bit.ly/flipshope" style="text-decoration: none; color: white;">Download Now</a></button>
+            </div>
+            <!--Bottom Button-->
+        </div>
+        <!--HTML Mid Container-->
+        <!--Footer-->
+       <div class="footer">
+            <a href="https://t.me/flipshope" style="text-decoration: none;"><img class="logo" src="PNG/telegram.png"></a>
+            <a href="https://www.linkedin.com/company/72058165/" style="text-decoration: none;"><img class="logo" src="PNG/linkedin.png"></a>
+            <a href="https://twitter.com/Flipshope" style="text-decoration: none;"><img class="logo" src="PNG/twitter.png"></a>
+            <a href="https://www.instagram.com/flipshopedotcom/" style="text-decoration: none;"><img class="logo" src="PNG/instagram.png"></a>
+            <a href="https://www.youtube.com/channel/UCLxG6EGklFZbhBP-6rdYSLA" style="text-decoration: none;"><img class="logo" src="PNG/youtube.png"></a>
+            <a href="wa.me/919999488008" style="text-decoration: none;"><img class="logo" src="PNG/whatsapp.png"></a>
+        </div>      
+        <!--Footer-->
+    </div>
+</body>
+</html>
